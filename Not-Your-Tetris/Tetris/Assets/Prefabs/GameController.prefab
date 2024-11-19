@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6161176195705967828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6161176195705967831}
+  - component: {fileID: 6161176195705967830}
+  - component: {fileID: 6802446925762957952}
+  - component: {fileID: 7134458949277368177}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6161176195705967831
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6161176195705967828}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 438355621044227572}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6161176195705967830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6161176195705967828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ea6c962e379324a989f97d34b23732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _difficulty: 0.5
+--- !u!114 &6802446925762957952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6161176195705967828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 949acb48bac6dde4a88b2390531c19e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _masterMixer: {fileID: 24300002, guid: 1211b9f8cb676164b95e4a789854c9c1, type: 2}
+  _musicMixer: {fileID: -2539589361024154401, guid: 1211b9f8cb676164b95e4a789854c9c1, type: 2}
+  _effectsMixer: {fileID: 2724558723157616119, guid: 1211b9f8cb676164b95e4a789854c9c1, type: 2}
+--- !u!114 &7134458949277368177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6161176195705967828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20ca3df5fbbe01141a800e2deff3901e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialCompletionWaitSeconds: 0
+  CellCompletionSpacingSeconds: 0.025
+--- !u!1 &6241022141265933100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 438355621044227572}
+  - component: {fileID: 2919657627766833693}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &438355621044227572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6241022141265933100}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6161176195705967831}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2919657627766833693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6241022141265933100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5333b2f00f4fbaf46bdf268ad34bd88e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _musicGroup: {fileID: -2539589361024154401, guid: 1211b9f8cb676164b95e4a789854c9c1, type: 2}
+  _effectsGroup: {fileID: 2724558723157616119, guid: 1211b9f8cb676164b95e4a789854c9c1, type: 2}
+  _music:
+    SoundEnum: 0
+    Clip: {fileID: 8300000, guid: 92e1c13ada2c1544b97b14f6e1823435, type: 3}
+    Channel: 0
+    Volume: 0.8
+    Source: {fileID: 0}
+  _sounds:
+  - SoundEnum: 2
+    Clip: {fileID: 8300000, guid: 02a84d9a7c01dd143b7cc7b32d64980b, type: 3}
+    Channel: 0
+    Volume: 0.8
+    Source: {fileID: 0}
+  - SoundEnum: 1
+    Clip: {fileID: 8300000, guid: 46685e24450afd3498396d7e8d588563, type: 3}
+    Channel: 1
+    Volume: 0.15
+    Source: {fileID: 0}
+  - SoundEnum: 0
+    Clip: {fileID: 8300000, guid: b08754763c70ad24fa1a7dd388db466e, type: 3}
+    Channel: 1
+    Volume: 0.15
+    Source: {fileID: 0}
